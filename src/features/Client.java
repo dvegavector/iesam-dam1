@@ -1,0 +1,113 @@
+package features;
+
+public class Client {
+    private int id;
+    private String nombre;
+    private String apellidos;
+    private String nif;
+    private String direccion;
+    private String localidad;
+    private String provincia;
+    private String telefono;
+    private String email;
+
+    public Client(int id, String nombre, String apellidos, String nif,
+                  String direccion, String localidad, String provincia,
+                  String telefono, String email) {
+        this.id = id;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.nif = nif;
+        this.direccion = direccion;
+        this.localidad = localidad;
+        this.provincia = provincia;
+        this.telefono = telefono;
+        this.email = email;
+    }
+
+    // Getters y setters sencillos
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public String getNif() {
+        return nif;
+    }
+
+    public void setNif(String nif) {
+        this.nif = nif;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getLocalidad() {
+        return localidad;
+    }
+
+    public void setLocalidad(String localidad) {
+        this.localidad = localidad;
+    }
+
+    public String getProvincia() {
+        return provincia;
+    }
+
+    public void setProvincia(String provincia) {
+        this.provincia = provincia;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    // Para imprimir el cliente de forma sencilla
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", nif='" + nif + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", localidad='" + localidad + '\'' +
+                ", provincia='" + provincia + '\'' +
+                ", telefono='" + telefono + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
+}
